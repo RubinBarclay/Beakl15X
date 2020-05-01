@@ -42,18 +42,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |  Esc | Tab  |   H  |   O  |   U  |   '  |   ;  |   C  |   R  |   F  | Bksp | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   Q  |   Y  |   I  |   E  |   A  |   Z  |   D  |   S  |   T  |   N  |   B  |   W  |
+ * |   Q  |   Y  |   I  |   E  |   A  |   Z  |   D  |   S  |   T  |   N  |   W  |   J  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |ScrlUp|   V  |   J  |   X  |   K  |   .  |   ,  |   M  |   L  |   P  |   G  |Enter |
+ * |ScrUp |   V  |   B  |   X  |   K  |   .  |   ,  |   M  |   L  |   P  |   G  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |ScrlDn| Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
+ * |ScrDn | Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_BEAKL15X] = LAYOUT_preonic_grid( \
-  QWERTY,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,   _______,  \
+  QWERTY,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    BKL15X,  \
   KC_ESC,  KC_TAB,  KC_H,    KC_O,    KC_U,    KC_QUOT, KC_SCLN, KC_C,    KC_R,    KC_F,    KC_BSPC, KC_DEL,  \
-  KC_Q,    KC_Y,    KC_I,    KC_E,    KC_A,    KC_Z,    KC_D,    KC_S,    KC_T,    KC_N,    KC_B,    KC_W,    \
-  KC_WH_U, KC_V,    KC_J,    KC_X,    KC_K,    KC_DOT,  KC_COMM, KC_M,    KC_L,    KC_P,    KC_G,    KC_ENT,  \
+  KC_Q,    KC_Y,    KC_I,    KC_E,    KC_A,    KC_Z,    KC_D,    KC_S,    KC_T,    KC_N,    KC_W,    KC_J,    \
+  KC_WH_U, KC_V,    KC_B,    KC_X,    KC_K,    KC_DOT,  KC_COMM, KC_M,    KC_L,    KC_P,    KC_G,    KC_ENT,  \
   KC_WH_D, KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
 ),
 
