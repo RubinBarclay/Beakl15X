@@ -38,23 +38,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Beakl15X
  * ,-----------------------------------------------------------------------------------.
- * |Qwerty|   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |      |
+ * |      |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |  Esc | Tab  |   H  |   O  |   U  |   '  |   ;  |   C  |   R  |   F  | Bksp | Del  |
+ * |  Esc | Tab  |   H  |   O  |   U  |   '  |   ;  |   F  |   C  |   N  | Bksp | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   Q  |   Y  |   I  |   E  |   A  |   Z  |   D  |   S  |   T  |   N  |   W  |   J  |
+ * |   Q  |   Y  |   I  |   E  |   A  |   Z  |   W  |   S  |   T  |   R  |   G  |   J  |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |ScrUp |   V  |   B  |   X  |   K  |   .  |   ,  |   M  |   L  |   P  |   G  |Enter |
+ * | End  |   B  |   V  |   X  |   K  |   .  |   ,  |   D  |   M  |   L  |   P  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |ScrDn | Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
+ * |Qwerty| Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_BEAKL15X] = LAYOUT_preonic_grid( \
-  QWERTY,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    BKL15X,  \
-  KC_ESC,  KC_TAB,  KC_H,    KC_O,    KC_U,    KC_QUOT, KC_SCLN, KC_C,    KC_R,    KC_F,    KC_BSPC, KC_DEL,  \
-  KC_Q,    KC_Y,    KC_I,    KC_E,    KC_A,    KC_Z,    KC_D,    KC_S,    KC_T,    KC_N,    KC_W,    KC_J,    \
-  KC_WH_U, KC_V,    KC_B,    KC_X,    KC_K,    KC_DOT,  KC_COMM, KC_M,    KC_L,    KC_P,    KC_G,    KC_ENT,  \
-  KC_WH_D, KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
+  _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,   _______,  \
+  KC_ESC,  KC_TAB,  KC_H,    KC_O,    KC_U,    KC_QUOT, KC_SCLN, KC_F,    KC_C,    KC_N,    KC_BSPC, KC_DEL,  \
+  KC_Q,    KC_Y,    KC_I,    KC_E,    KC_A,    KC_Z,    KC_W,    KC_S,    KC_T,    KC_R,    KC_G,    KC_J,    \
+  KC_END,  KC_B,    KC_V,    KC_X,    KC_K,    KC_DOT,  KC_COMM, KC_D,    KC_M,    KC_L,    KC_P,    KC_ENT,  \
+  QWERTY,  KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
 ),
 
 /* Qwerty
@@ -95,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, _______, _______, _______, _______, _______, _______, _______,_______, _______, _______, _______,  \
   KC_ESC,  KC_TAB,  KC_LBRC, KC_LCBR, KC_LPRN, KC_QUOT, KC_SCLN, KC_RPRN, KC_RCBR, KC_RBRC, KC_BSPC, KC_DEL,  \
   _______, KC_HASH, KC_AT,   KC_EXLM, KC_QUES, _______, KC_UNDS, KC_MINS, KC_PLUS, KC_EQL,  KC_PIPE, KC_TILD, \
-  _______, KC_CIRC, KC_AMPR, KC_DLR,  KC_UNDS, KC_DOT,  KC_COMM, KC_PERC, KC_ASTR, KC_SLSH, KC_BSLS, _______,  \
+  _______, KC_CIRC, KC_AMPR, KC_DLR,  KC_UNDS, KC_DOT,  KC_COMM, KC_PERC, KC_ASTR, KC_SLSH, KC_BSLS,_______,  \
   _______, _______, _______, _______, _______, _______, KC_ENT,  _______, KC_MPLY, KC_VOLD, KC_VOLU, KC_MNXT  \
 ),
 
