@@ -6,7 +6,7 @@ A keyboard layout designed for me, by me. I have very short stubby fingers makin
 
 ## Focuses
 #### Symmetry and comfort
-It always bothered me that every keyboard layout I tried put different levels of strain on both your hands. Typing on dvorak had my right hand all over the place while my left hardly ever moved. Those constant wrist movements I found to be very XXXXXXX, which eventually led me to designing a layout which ruled out almost all wrist movements by centering all letters and common keys under your fingers. 
+It always bothered me that every keyboard layout I tried put different levels of strain on both your hands. Typing on dvorak had my right hand all over the place while my left hardly ever moved. Those constant wrist movements I found to be very annoying, which eventually led me to designing a layout which ruled out almost all wrist movements by centering all letters and common keys under your fingers. 
 
 #### Alternation and rolls
 The left side and right both serve a purpose. The left contains the vowels and less common consonants while the right contains the more frequently used consonant. The reason for this is to promote alternation while typing i.e. every other keystroke on the other hand.
