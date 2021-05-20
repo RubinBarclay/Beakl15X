@@ -1,6 +1,8 @@
 # Tabhou - A Perfectly Symmetric Keyboard Layout
 
-![Tabhou Layout](tabhou-layout.png)
+| ![Tabhou Layout](tabhou_pinky3.png) |
+|:--:|
+| *Tabhou on the [Pinky3](https://github.com/tamanishi/Pinky3)* | 
 
 A keyboard layout designed for me, by me. I have very short stubby fingers making regular ten finger touch typing on any keyboard a difficult and unpleasant task. The layout is made for ortholinear keyboards and is not designed to work on regular staggered keyboards. 
 

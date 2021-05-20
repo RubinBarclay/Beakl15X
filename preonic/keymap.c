@@ -18,7 +18,7 @@
 #include "muse.h"
 
 enum preonic_layers {
-  _BEAKL15X,
+  _TABHOU,
   _QWERTY,
   _LOWER,
   _RAISE,
@@ -26,7 +26,7 @@ enum preonic_layers {
 };
 
 enum preonic_keycodes {
-  BKL15X = SAFE_RANGE,
+  TABHOU = SAFE_RANGE,
   QWERTY,
   LOWER,
   RAISE,
@@ -36,7 +36,7 @@ enum preonic_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
-/* Beakl15X
+/* Tabhou
  * ,-----------------------------------------------------------------------------------.
  * |Qwerty|   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -49,8 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |ScrDn | Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
-[_BEAKL15X] = LAYOUT_preonic_grid( \
-  QWERTY,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    BKL15X,  \
+[_TABHOU] = LAYOUT_preonic_grid( \
+  QWERTY,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TABHOU,  \
   KC_ESC,  KC_TAB,  KC_H,    KC_O,    KC_U,    KC_QUOT, KC_SCLN, KC_C,    KC_R,    KC_F,    KC_BSPC, KC_DEL,  \
   KC_Q,    KC_Y,    KC_I,    KC_E,    KC_A,    KC_Z,    KC_D,    KC_S,    KC_T,    KC_N,    KC_W,    KC_J,    \
   KC_WH_U, KC_V,    KC_B,    KC_X,    KC_K,    KC_DOT,  KC_COMM, KC_M,    KC_L,    KC_P,    KC_G,    KC_ENT,  \
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  | End  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Beakl| Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
+ * |Tabhou| Ctrl | Alt  | GUI  |Lower |  Spc | Shft |Raise | Left | Down |  Up  |Right |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid( \
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
   KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_END,  \
-  BKL15X,  KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
+  TABHOU,  KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_RSFT, RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
 ),
 
 /* Lower
@@ -146,9 +146,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   switch (keycode) {
-        case BKL15X:
+        case TABHOU:
           if (record->event.pressed) {
-            set_single_persistent_default_layer(_BEAKL15X);
+            set_single_persistent_default_layer(_TABHOU);
           }
           return false;
           break;
